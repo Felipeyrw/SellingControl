@@ -7,10 +7,13 @@ from botoes import *
 import requests
 from bannervendas import BannerVenda
 from functools import partial
-import os
 from myfirebase import MyFirebase
 from bannervendedor import BannerVendedor
 from datetime import date
+import os
+import certifi
+
+os.environ["SSL_CERT_FILE"] = certifi.where()
 
 
 GUI = Builder.load_file("main.kv")
