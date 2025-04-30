@@ -1,0 +1,44 @@
+<MudarFotoPerfilPage>:
+
+    FloatLayout:
+        canvas:
+            Rectangle:
+                size: self.size
+                pos: self.pos
+                source: "icones/bg1.png"
+        Label:
+            canvas.before:
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+                    source: 'icones/botao_fino.png'
+            pos_hint: {"right": 0.85, "top": 0.95}
+            size_hint: 0.7, 0.2
+            text: 'Selecione sua foto de perfil'
+        ScrollView:
+            pos_hint: {'right': 1, 'top': 0.7}
+            size_hint: 1, 1
+
+            GridLayout:
+                cols: 3
+                id: lista_fotos
+                size_hint_y: None
+                height: self.minimum_height
+                spacing: 5, 5
+                row_default_height: "90dp"
+                row_force_default: True
+        #botao voltar
+        FloatLayout:
+            pos_hint: {'right': 1, 'top': 0.12}
+            size_hint: 1, 0.12
+            canvas:
+                Color:
+                    rgb: utils.get_color_from_hex("006D7E")
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+            ImageButton:
+                pos_hint: {"right": 0.2, "top": 0.9}
+                size_hint: 0.2, 1
+                source: "icones/voltar.png"
+                on_release: app.mudar_tela("ajustespage")
