@@ -15,7 +15,6 @@ Um app simples para gerenciar o dia-dia de um vendedor com fornecedores, aliment
 - 🚪 **Login/Cadastro** - Entrada por login ou cadastro no firebase, protegendo as contas.
 - 💰 **Vendas** - Cadastro das vendas com fornecedores, alimentos e preços
 - 👥 **Vendedores** - Cadastro de vendedores e acompanhamento de suas vendas
-- ✂️ **Serviços** - Catálogo de serviços com preço e duração
 - ➡️ **Ver Vendas** - Acompanhar as suas vendas e de outros vendedores
 
 ---
