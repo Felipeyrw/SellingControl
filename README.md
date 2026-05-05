@@ -8,19 +8,15 @@
 
 ## 📋 Visão Geral
 
-Um app simples para gerenciar o dia-dia de um vendedor com fornecedores, alimentos vendidos, adicionar amizades para acompanhar vendas, e o cadastro de vendas 
+Um app simples para gerenciar o dia-dia de um vendedor com fornecedores, alimentos vendidos, adicionar amizades para acompanhar vendas, e o cadastro de vendas.
 
 ---
-nline
 ## 🚀 Funcionalidades
-
-- 📅 **Agendamentos** - Gestão de horários com validação de conflitos
-- 👥 **Clientes** - Cadastro e histórico de clientes
+- 🚪 **Login/Cadastro** - Entrada por login ou cadastro no firebase, protegendo as contas.
+- 💰 **Vendas** - Cadastro das vendas com fornecedores, alimentos e preços
+- 👥 **Vendedores** - Cadastro de vendedores e acompanhamento de suas vendas
 - ✂️ **Serviços** - Catálogo de serviços com preço e duração
-- 💰 **Financeiro** - Controle de receitas, despesas e lucro
-- 📊 **Relatórios** - Dashboards e exportação de dados
-- 🔔 **Notificações** - Lembretes automáticos
-- ⚙️ **Configurações** - Disponibilidade, intervalos, férias
+- ➡️ **Ver Vendas** - Acompanhar as suas vendas e de outros vendedores
 
 ---
 
@@ -37,10 +33,10 @@ nline
 
 ```
 lib/
-├── main.kv                  # Entry point
-├── main.py
-├── myfirebase.py
-├── telas.py
+├── main.py                  # Entry point
+├── myfirebase.py            # Integração com firebase
+├── telas.py                 # Definição de telas no python
+├── main.kv                  # Definição de telas no kivy
 ├── botoes.py                # Botões Utils
 ├── refresh_token.py         # Refresh Token ( Login automático pela sessão já validada )
 ├── icones/                  # Ícones usados no app
