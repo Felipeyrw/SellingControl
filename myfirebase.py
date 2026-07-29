@@ -4,7 +4,7 @@ from kivy.clock import Clock
 
 
 class MyFirebase():
-    API_KEY = "AIzaSyANWC49U5_BQwYvCPXjgFp9vVIiDY3DM3E"
+    API_KEY = "qualquerString"
 
     def criar_conta(self, email, senha):
         link = f"https://identitytoolkit.googleapis.com/v1/accounts:signUp?key={self.API_KEY}"
